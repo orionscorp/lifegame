@@ -1,4 +1,6 @@
-// pages/index.js
+// frontend/app/page.js
+"use client";
+
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -11,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Life Log</h1>
+      <h1>Life Log syi</h1>
       <nav className="nav">
         <Link href="/life-log" className="nav-link">Life Log</Link>
         <Link href="/schedule" className="nav-link">Schedule</Link>
