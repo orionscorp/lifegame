@@ -3,6 +3,9 @@
 
 import Link from 'next/link';
 import Head from 'next/head';
+import "./globals.css";
+
+
 
 export default function Home() {
   return (
@@ -15,14 +18,14 @@ export default function Home() {
 
       <h1>Life Log syi</h1>
       <nav className="nav">
-        <Link href="/life-log" className="nav-link">Life Log</Link>
+        <Link href="/life_log" className="nav-link">Life Log</Link>
         <Link href="/schedule" className="nav-link">Schedule</Link>
         <Link href="/meditate" className="nav-link">Meditate</Link>
         <Link href="/back" className="nav-link">Back</Link>
         <Link href="/time" className="nav-link">Time</Link>
       </nav>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         .container {
           max-width: 600px;
           margin: 0 auto;
@@ -50,7 +53,7 @@ export default function Home() {
         .nav-link:hover {
           background: #e0e0e0;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 // pages/schedule.js
+"use client";
 import Link from 'next/link';
-import { useState } from 'react';
+import { use, useState } from 'react';
 
 export default function Schedule() {
   const [days, setDays] = useState({
