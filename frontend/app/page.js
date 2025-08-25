@@ -3,17 +3,18 @@
 
 import Link from 'next/link';
 import Head from 'next/head';
+import styles from '@/styles/main.module.css'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Head>
         <title>Life Log</title>
         <meta name="description" content="Life tracking application" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Life Log syi</h1>
+      <h1 className='text-center mb-8 text-4xl'>Life Log syi</h1>
       <nav className="nav">
         <Link href="/life-log" className="nav-link">Life Log</Link>
         <Link href="/schedule" className="nav-link">Schedule</Link>
@@ -24,13 +25,14 @@ export default function Home() {
 
       <style jsx>{`
         .container {
-          max-width: 600px;
+          max-width: 1400px;
           margin: 0 auto;
           padding: 20px;
         }
         h1 {
           text-align: center;
           margin-bottom: 30px;
+          font-size: 2.5rem;
         }
         .nav {
           display: flex;
