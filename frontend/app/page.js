@@ -3,37 +3,36 @@
 
 import Link from 'next/link';
 import Head from 'next/head';
-import "./globals.css";
-
-
+import styles from '@/styles/main.module.css'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Head>
         <title>Life Log</title>
         <meta name="description" content="Life tracking application" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Life Log syi</h1>
-      <nav className="nav">
-        <Link href="/life_log" className="nav-link">Life Log</Link>
-        <Link href="/schedule" className="nav-link">Schedule</Link>
-        <Link href="/meditate" className="nav-link">Meditate</Link>
-        <Link href="/back" className="nav-link">Back</Link>
-        <Link href="/time" className="nav-link">Time</Link>
+      <h1 className='text-center mb-8 text-4xl'>Life Log syi</h1>
+      <nav className={styles.nav}>
+        <Link href="/life-log" className={styles.navLink}>Life Log</Link>
+        <Link href="/schedule" className={styles.navLink}>Schedule</Link>
+        <Link href="/meditate" className={styles.navLink}>Meditate</Link>
+        <Link href="/back" className={styles.navLink}>Back</Link>
+        <Link href="/time" className={styles.navLink}>Time</Link>
       </nav>
 
       {/* <style jsx>{`
         .container {
-          max-width: 600px;
+          max-width: 1400px;
           margin: 0 auto;
           padding: 20px;
         }
         h1 {
           text-align: center;
           margin-bottom: 30px;
+          font-size: 2.5rem;
         }
         .nav {
           display: flex;

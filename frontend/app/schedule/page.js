@@ -1,5 +1,9 @@
 // pages/schedule.js
 "use client";
+<<<<<<< HEAD
+=======
+
+>>>>>>> f32375cf4342bd0b9454d5e076e5abed6204d3c9
 import Link from 'next/link';
 import { use, useState } from 'react';
 
