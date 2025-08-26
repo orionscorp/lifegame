@@ -1,23 +1,23 @@
 .container {
-    max-width: 1400px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px;;
 }
 .nav {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.nav-link {
+.navLink {
     padding: 15px;
     background: #f0f0f0;
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: #333;
     font-weight: 500;
     transition: background 0.2s;
 }
-.nav-link:hover {
+.navLink:hover {
     background: #e0e0e0;
 }

@@ -15,15 +15,15 @@ export default function Home() {
       </Head>
 
       <h1 className='text-center mb-8 text-4xl'>Life Log syi</h1>
-      <nav className="nav">
-        <Link href="/life-log" className="nav-link">Life Log</Link>
-        <Link href="/schedule" className="nav-link">Schedule</Link>
-        <Link href="/meditate" className="nav-link">Meditate</Link>
-        <Link href="/back" className="nav-link">Back</Link>
-        <Link href="/time" className="nav-link">Time</Link>
+      <nav className={styles.nav}>
+        <Link href="/life-log" className={styles.navLink}>Life Log</Link>
+        <Link href="/schedule" className={styles.navLink}>Schedule</Link>
+        <Link href="/meditate" className={styles.navLink}>Meditate</Link>
+        <Link href="/back" className={styles.navLink}>Back</Link>
+        <Link href="/time" className={styles.navLink}>Time</Link>
       </nav>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         .container {
           max-width: 1400px;
           margin: 0 auto;
@@ -52,7 +52,7 @@ export default function Home() {
         .nav-link:hover {
           background: #e0e0e0;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }
