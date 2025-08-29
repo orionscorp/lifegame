@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\pro\\lifegame\\backend\\backend.csproj": {}
+    "/home/orion/lifeapp/backend/backend.csproj": {}
   },
   "projects": {
-    "D:\\pro\\lifegame\\backend\\backend.csproj": {
+    "/home/orion/lifeapp/backend/backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pro\\lifegame\\backend\\backend.csproj",
+        "projectUniqueName": "/home/orion/lifeapp/backend/backend.csproj",
         "projectName": "backend",
-        "projectPath": "D:\\pro\\lifegame\\backend\\backend.csproj",
-        "packagesPath": "C:\\Users\\guydi\\.nuget\\packages\\",
-        "outputPath": "D:\\pro\\lifegame\\backend\\obj\\",
+        "projectPath": "/home/orion/lifeapp/backend/backend.csproj",
+        "packagesPath": "/home/orion/.nuget/packages/",
+        "outputPath": "/home/orion/lifeapp/backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guydi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/orion/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -37,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -47,6 +46,16 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.19, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -64,24 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.19, 8.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -90,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
