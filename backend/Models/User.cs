@@ -1,4 +1,3 @@
-// Models/User.cs
 namespace YourProjectName.Models
 {
     public class User
