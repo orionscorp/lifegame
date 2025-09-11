@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import styles from '@/styles/main.module.css'
-import Navbar from './component/navbar';
+import Navbar from '../component/navbar';
 
 export default function Home() {
   return (

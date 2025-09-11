@@ -3,18 +3,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --variable-collection-cream: rgba(255, 250, 220, 1);
-  --variable-collection-dark-green: rgba(152, 205, 0, 1);
-  --variable-collection-green: rgba(164, 221, 0, 1);
+ --variable-collection-cream: rgba(255, 250, 220, 1);
+  --variable-collection-dark-green: rgba(75, 84, 43, 1);
+  --variable-collection-green: rgba(152, 205, 0, 1);
   --variable-collection-light-green: rgba(182, 245, 0, 1);
+  --variable-collection-blue: rgba(4, 63, 109, 1);
 }
 
-/* @theme inline {
+@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-} */
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -30,7 +31,7 @@ body {
 }
 
 /* ======================================================================================== */
-.container {
+/* .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
@@ -52,4 +53,4 @@ h1 {
   text-decoration: none;
   color: var(--foreground);
   font-weight: bold;
-}
+} */

@@ -1,0 +1,138 @@
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Keeps navbar above content */
+    background-color: #fffadc;
+    display: flex;
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* navbar container */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--variable-collection-cream);
+    width: 100%;
+    height: 90px;
+    padding: 0 32px;
+    position: relative;
+}
+
+.logo{
+    font-family: "Press Start 2P", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+/* NAVIGATION ITEM */
+.navLinks{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.navLink{
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem; 
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2 ease-in-out;
+}
+
+.navLink:hover{
+    color: var(--variable-collection-dark-green);
+}
+
+.navlink:focus{
+    outline: none;
+    box-shadow: 0 2px 0 var(--variable-collection-dark-green);
+}
+
+/* BUTTON */
+.menuButton{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.bar{
+    width: 24px;
+    height: 3px;
+    background-color: var(--variable-collection-dark-green);
+}
+
+
+.loginButton{
+    background-color: var(--variable-collection-dark-green);
+    border: none;
+    border-radius: 20px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.loginText{
+    font-size: 1.25rem;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 600;
+    color: var(--variable-collection-cream);
+}
+/* responsive */
+
+@media (max-width: 1024px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: var(--variable-collection-cream);
+    padding: 24px;
+    width: 100%;
+    max-width: 300px;
+    gap: 24px;
+    box-shadow: -2px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 8px 8px;
+    z-index: 99;
+  }
+
+  .navLinks.open {
+    display: flex; /* Just toggle without animation */
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .loginButton {
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+}
+
+/* .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--variable-collection-cream);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 60px;
+} */
