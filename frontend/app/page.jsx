@@ -4,15 +4,17 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import styles from '@/styles/main.module.css'
+import Navbar from './component/navbar';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className='container'>
       <Head>
         <title>Life Log</title>
         <meta name="description" content="Life tracking application" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <Navbar /> */}
 
       <h1 className='text-center mb-8 text-4xl'>Life Log syi</h1>
       <nav className={styles.nav}>

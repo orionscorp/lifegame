@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --variable-collection-cream: rgba(255, 250, 220, 1);
+  --variable-collection-dark-green: rgba(152, 205, 0, 1);
+  --variable-collection-green: rgba(164, 221, 0, 1);
+  --variable-collection-light-green: rgba(182, 245, 0, 1);
 }
 
 /* @theme inline {
@@ -14,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -27,7 +31,7 @@ body {
 
 /* ======================================================================================== */
 .container {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
